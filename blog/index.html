@@ -7,23 +7,61 @@
         <h1>
             Arsenal FC
         </h1>
-        <p>
-            Vítejte na blogu, na kterých najdete vše, co se týká londýnského fotbalového týmu Arsenal.
-        </p>
-        <form>
-            <p>
-                <label>
-                Titulek pro nový příspěvek <br>
-                    <input type="text">
-                </label>
-            </p>
-            <p>
-                <label>
+        <div class="list">
+            <ul>
+                <li><a href="hodnoceni.html"> Hodnocení hráčů</li></a>
+                <li><a href="soupiska.html"> Soupiska</li></a>
+                <li><a href="rozpis.html"> Rozpis utkání</li></a>
+            </ul>
+        </div>
+        <div class="all">
+            <div class="first_title">
+                <p>
+                    Vítejte na blogu, na kterém najdete vše, co se týká londýnského fotbalového týmu Arsenal.
+                </p>
+            </div>
+            <form>
+                <div class="articles">
+                    <label>
+                    Titulek pro nový příspěvek <br>
+                        <input id="newTitle" type="text">
+                    </label>
+                    <br>          
                     Obsah článku: <br>
-                    <input type="text">
-                </label>
-            </p>
-        </form>
-     
+                    <input id="newArticle" type="text">                    
+                    <br>
+                   <input id="newItem" type="submit" value="Odeslat">
+                </div>
+            </form>
+            <div class="footer">
+                <h3>
+                    Počítač návštěv
+                    <div id="number">0</div>
+                    <div>
+                        <button id="button">
+                            Byl jsem tu
+                        </button>    
+                    </div>
+                </h3>
+            </div> 
+
+            <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+            <script>
+            // Initialize Firebase
+            var config = {
+            apiKey: "AIzaSyB-pT1wkF5dp5ubkpwwmBdoWIGTWeSUA80",
+            authDomain: "gunnersblog-61331.firebaseapp.com",
+            databaseURL: "https://gunnersblog-61331.firebaseio.com",
+            projectId: "gunnersblog-61331",
+            storageBucket: "gunnersblog-61331.appspot.com",
+            messagingSenderId: "686560228057"
+            };
+            firebase.initializeApp(config);
+            fb = firebase.database();
+            </script>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="scripts.js"></script>
+        </div>
     </body>
 </html>

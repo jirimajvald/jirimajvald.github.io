@@ -1,0 +1,57 @@
+h1{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-color: #ef0107;
+    background-position: left;
+    background-size: 130px; 
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    height: 100px;
+    padding-top: 30px;
+}
+.all{
+    border-top: 10px solid #ef0107;
+    border-bottom: 10px solid #ef0107;
+    background: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    padding: 16px;
+    text-decoration: none;
+}
+.first_title{
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 5px solid #ef0107;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+h2{
+    text-align: center;
+}
+.newPostTitle{
+    border-top: 5px solid black;
+}
+.newPostArticle{
+    border-bottom: 5px solid black;
+}
+p{
+    text-align: center;
+}
+.footer{
+        background-color: #f1f1f1;
+        padding: 10px;
+        text-align: center;
+}
