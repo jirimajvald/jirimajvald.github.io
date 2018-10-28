@@ -1,4 +1,23 @@
-#text1{
-    height:500px;
-    font-size:14pt
+.top{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 10px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.nav{
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+}
+.nav a{
+    display:inline-block;
+    padding:10px;
+    text-decoration: none;
+    color: black;
 }
